@@ -1,2 +1,2 @@
-# ENSF381-LAB1
-Lab 1 project for ENSF 381
+# ENSF381-LABS
+Lab projects for ENSF 381
