@@ -8,7 +8,86 @@
 <body>
 <h1>JavaScript Lab Exercise 1</h1>
 <script>
-// Write your JavaScript code here
+function A(){
+    var x = 5;
+    let y = 6;
+    const z = 7;
+
+    y = 60;
+
+    try{
+        z = 70;
+    }
+    catch(e){
+        console.log("Error: cannot reassign const");
+    }
+}
+    
+function B(){
+    let string1 = "Hello, World!";
+    let string2 = "JavaScript is fun!";
+
+    console.log(string1.length);
+    console.log(string1 + string2);
+
+    let string3 = string2.replace("fun", "awesome");
+    console.log(string3);
+}
+
+function C(){
+    let name = "Alice";
+    let age = 25;
+
+    const result = `My name is ${name} and I am ${age} years old.`;
+    console.log(result);
+}
+
+function D(){
+    const students = ["Alice", "Tom", "Charlie"]
+    const ages = [19, 21, 20]
+
+    for (let i = 0; i < students.length; i++) {
+        let studentInfo = `My name is ${students[i]} and I am ${ages[i]} years old`;
+        console.log(studentInfo);
+    }
+}
+
+function E(){
+    let date = new Date();
+
+    CA_date = date.toLocaleDateString("en-CA");
+    US_date = date.toLocaleDateString("en-US");
+    console.log(CA_date);
+    console.log(US_date);
+
+    console.log(date.getFullYear());
+    const month = date.getMonth();
+    console.log(month);
+    console.log(date.toLocaleDateString("en-CA", {weekday: "long"}));
+
+    let season;
+
+    if (month <= 1 || month === 11){
+        season = "Winter";
+    }
+    else if (month <= 4 && month >= 2){
+        season = "Spring";
+    }
+    else if (month <= 7 && month >= 5){
+        season = "Summer";
+    }
+    else{
+        season = "Fall";
+    }
+
+    console.log(season);
+}
+
+A();
+B();
+C();
+D();
+E();
 </script>
 </body>
 </html>
