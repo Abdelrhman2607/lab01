@@ -1,14 +1,51 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Lab3 -- Exercise 2</title>
-</head>
-<body>
-<h1>JavaScript Lab Exercise 2</h1>
-<script>
-// Write your JavaScript code here
-</script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lab3 -- Exercise 2</title>
+  </head>
+  <body>
+    <h1>JavaScript Lab Exercise 2</h1>
+    <script>
+      // A //
+      // function add(a, b) {
+      //     return a + b;
+      // }
+      // function subtract(a, b) {
+      //     return a - b;
+      // }
+
+      // B //
+      // function add(a, b = 5) {
+      //     return a + b;
+      // }
+      // function subtract(a, b = 5) {
+      //     return a - b;
+      // }
+
+      // C //
+      const add = (a, b = 5) => {
+        return a + b;
+      };
+      const subtract = (a, b = 5) => {
+        return a - b;
+      };
+      const multiply = (a, b) => {
+        return a * b;
+      };
+      const divide = (a, b) => {
+        if (b === 0) {
+          console.error("Divisor can not be 0.");
+          return;
+        }
+        return a / b;
+      };
+
+      // D //
+      function calculator(num1, num2, operation) {
+        return operation(num1, num2);
+      }
+    </script>
+  </body>
 </html>
